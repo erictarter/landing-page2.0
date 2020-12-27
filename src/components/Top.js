@@ -21,6 +21,9 @@ export const Top = () => {
     document.querySelector('.message4').classList.remove('show');
     document.querySelector('.ss-links').classList.add('show');
   }, 3000);
+  setTimeout(() => {
+    document.querySelector('.message').style.display = 'none';
+  }, 3500);
 
   return (
     <div>

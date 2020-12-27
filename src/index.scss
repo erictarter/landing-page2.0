@@ -31,6 +31,49 @@ body::after {
   transform: translateX(-50%);
 }
 
+.message {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 4rem;
+}
+
+.message1 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.message2 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.message3 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.message4 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.message1.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.message2.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.message3.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.message4.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
 .center-maxw {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -72,8 +115,14 @@ body::after {
 }
 
 .ss-links {
+  opacity: 0;
   display: flex;
   justify-content: flex-end;
+}
+
+.ss-links.show {
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .ss-link {
@@ -475,6 +524,11 @@ a {
 
   .mobile-overlay {
     visibility: visible;
+  }
+
+  .message {
+    margin-top: 3rem;
+    z-index: 10;
   }
 }
 

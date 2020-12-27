@@ -11,6 +11,10 @@ body {
   // overflow: hidden;
 }
 
+.main-container {
+  position: relative;
+}
+
 body::after {
   content: '';
   position: absolute;
@@ -401,9 +405,22 @@ a {
   margin-top: 6rem;
   padding: 2rem;
   font-size: 1.4rem;
+  min-height: 2.5rem;
   border-top: 2px solid #fff;
   background: rgba(0, 0, 0, 0.8);
   z-index: 51;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  transform: translate(-50%);
+}
+.scroll-up:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 950px) {

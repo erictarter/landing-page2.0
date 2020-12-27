@@ -4,6 +4,7 @@ import { Projects } from './Projects';
 import { About } from './About';
 import { Socials } from './Socials';
 import { Footer } from './Footer';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Container = () => {
   return (
@@ -16,6 +17,17 @@ export const Container = () => {
           <Socials></Socials>
           <Footer></Footer>
         </div>
+        <Link
+          className='scroll-up'
+          activeClass='active'
+          to='header'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          <i className='fas fa-chevron-up up-arrow'></i>
+        </Link>
       </div>
     </div>
   );

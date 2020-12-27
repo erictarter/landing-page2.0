@@ -17,7 +17,7 @@ export const Top = () => {
 
   return (
     <div>
-      <div className='header'>
+      <div className='header' id='header'>
         <div className='message'>
           <span className='message1'>Welcome</span>
           <br />

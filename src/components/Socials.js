@@ -10,7 +10,7 @@ export const Socials = () => {
         <div className='social-grid'>
           <div className='github'>
             <a href='https://github.com/erictarter' target='_blank'>
-              <i className='fab fa-github instagram-icon'></i>
+              <i className='fab fa-github instagram-icon github'></i>
             </a>
           </div>
           <div className='face'>
@@ -20,7 +20,7 @@ export const Socials = () => {
           </div>
           <div className='insta'>
             <a href='https://www.instagram.com/erictarter/' target='_blank'>
-              <i className='fab fa-instagram'></i>
+              <i className='fab fa-instagram insta'></i>
             </a>
           </div>
         </div>

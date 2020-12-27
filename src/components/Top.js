@@ -6,26 +6,14 @@ export const Top = () => {
     document.querySelector('.message1').classList.add('show');
   }, 200);
   setTimeout(() => {
-    document.querySelector('.message2').classList.add('show');
-  }, 800);
-  setTimeout(() => {
-    document.querySelector('.message3').classList.add('show');
-  }, 1400);
-  setTimeout(() => {
-    document.querySelector('.message4').classList.add('show');
+    document.querySelector('.message1').classList.remove('show');
   }, 2000);
   setTimeout(() => {
-    document.querySelector('.message1').classList.remove('show');
-    document.querySelector('.message2').classList.remove('show');
-    document.querySelector('.message3').classList.remove('show');
-    document.querySelector('.message4').classList.remove('show');
-  }, 3000);
-  setTimeout(() => {
     document.querySelector('.ss-links').classList.add('show');
-  }, 3150);
+  }, 2700);
   setTimeout(() => {
     document.querySelector('.message').style.display = 'none';
-  }, 3500);
+  }, 2750);
 
   return (
     <div>
@@ -33,9 +21,6 @@ export const Top = () => {
         <div className='message'>
           <span className='message1'>Welcome</span>
           <br />
-          <span className='message2'>To</span> <br />
-          <span className='message3'>My</span> <br />
-          <span className='message4'>Page</span>
         </div>
         <div className='mobile-overlay'></div>
         <div className='avatar-2'></div>

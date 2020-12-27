@@ -511,6 +511,7 @@ a {
 @media (max-width: 420px) {
   body::after {
     height: 650%;
+    background: rgba(0, 0, 0, 0.6);
   }
   .header {
     background: rgb(19, 19, 19);
@@ -522,68 +523,61 @@ a {
     border-bottom: #fff 2px solid;
   }
   body {
-    // background-image: linear-gradient(rgb(12, 25, 43), rgb(11, 89, 123));
-    background: url('https://images.unsplash.com/photo-1551104083-a2051431491c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzB8fHNpbXBsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60')
-      no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
+    background-image: linear-gradient(rgb(35, 117, 232), rgb(94, 186, 225));
 
-  .ss-links {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 10rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
-  .ss-link {
-    font-size: 2.5rem;
-  }
-  .avatar-2 {
-    display: block;
-  }
-  .welcome-msg {
-    display: block;
-  }
+    .ss-links {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 10rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .ss-link {
+      font-size: 2.5rem;
+    }
+    .avatar-2 {
+      display: block;
+    }
+    .welcome-msg {
+      display: block;
+    }
 
-  .mobile-overlay {
-    visibility: visible;
-  }
+    .mobile-overlay {
+      visibility: visible;
+    }
 
-  .message {
-    margin-top: 20rem;
-    z-index: 10;
-  }
+    .message {
+      margin-top: 20rem;
+      z-index: 10;
+    }
 
-  .blog-link:hover {
-    box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
-  }
-  .project-link:hover {
-    box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
-  }
+    .blog-link:hover {
+      box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
+    }
+    .project-link:hover {
+      box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
+    }
 
-  .about-para {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+    .about-para {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
 
-  .line {
-    background: #fff;
-  }
-  .fa-instagram:hover {
-    transition: 0.4s ease all;
-    color: rgba(0, 0, 0, 0.6);
-  }
-  .fa-github-square:hover {
-    transition: 0.4s ease all;
-    color: rgba(0, 0, 0, 0.6);
-  }
-  .fa-facebook-square:hover {
-    transition: 0.4s ease all;
-    color: rgba(0, 0, 0, 0.6);
+    .line {
+      background: #fff;
+    }
+    .fa-instagram:hover {
+      transition: 0.4s ease all;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .fa-github-square:hover {
+      transition: 0.4s ease all;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .fa-facebook-square:hover {
+      transition: 0.4s ease all;
+      color: rgba(0, 0, 0, 0.6);
+    }
   }
 }
-
 // ADD WELCOME ANIMATION MESSAGE

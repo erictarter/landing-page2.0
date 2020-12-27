@@ -524,7 +524,11 @@ a {
   body {
     // background-image: linear-gradient(rgb(12, 25, 43), rgb(11, 89, 123));
     background: url('https://images.unsplash.com/photo-1512227201400-e0abf23f6677?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODF8fHNpbXBsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60')
-      no-repeat center center/cover fixed;
+      no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
 
   .ss-links {

@@ -176,7 +176,7 @@ body::after {
     50% 75%,
     0% 75%
   );
-  background-color: rgba(48, 107, 86, 0.8);
+  background-color: rgba(46, 74, 64, 0.8);
 }
 
 .words {
@@ -198,6 +198,7 @@ body::after {
 
 .lf-header {
   font-size: 2.4rem;
+  margin-top: 3rem;
 }
 
 .lf {
@@ -402,13 +403,13 @@ a:visited {
     opacity: 1;
   }
   body::after {
-    height: 750%;
+    height: 755%;
   }
 }
 
 @media (max-width: 520px) {
   body::after {
-    height: 760%;
+    height: 765%;
   }
 }
 @media (max-width: 380px) {
@@ -417,6 +418,7 @@ a:visited {
   }
   .header {
     background: url(./images/IMG-7251.jpg) no-repeat center;
+    background-attachment: none;
   }
 }
 

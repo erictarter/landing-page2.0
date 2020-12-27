@@ -19,8 +19,10 @@ export const Top = () => {
     document.querySelector('.message2').classList.remove('show');
     document.querySelector('.message3').classList.remove('show');
     document.querySelector('.message4').classList.remove('show');
-    document.querySelector('.ss-links').classList.add('show');
   }, 3000);
+  setTimeout(() => {
+    document.querySelector('.ss-links').classList.add('show');
+  }, 3150);
   setTimeout(() => {
     document.querySelector('.message').style.display = 'none';
   }, 3500);

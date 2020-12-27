@@ -5,7 +5,7 @@ export const Socials = () => {
     <div>
       <div className='socials center-maxw'>
         <h1 className='social-header' id='link-4'>
-          Find Me On...
+          Find Me On
         </h1>
         <div className='social-grid'>
           <div className='github'>

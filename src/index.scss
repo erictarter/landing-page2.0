@@ -340,7 +340,7 @@ a {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: 0.3s ease all;
   color: #fff;
   margin: 0 2rem;
@@ -522,7 +522,9 @@ a {
     border-bottom: #fff 2px solid;
   }
   body {
-    background-image: linear-gradient(rgb(12, 25, 43), rgb(11, 89, 123));
+    // background-image: linear-gradient(rgb(12, 25, 43), rgb(11, 89, 123));
+    background: url('https://images.unsplash.com/photo-1512227201400-e0abf23f6677?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODF8fHNpbXBsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60')
+      no-repeat center center/cover fixed;
   }
 
   .ss-links {

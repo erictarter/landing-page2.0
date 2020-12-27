@@ -12,7 +12,7 @@ export const About = () => {
             My Name is Eric Tarter. I am a Front End Developer Living in the
             Pacific Northwest. Two years ago I began to learn the basics of
             HTML. After that began learning my first programming Language,
-            Python. One year ago or so I started to learn front end
+            Python. About one year ago I started to learn front end
             developement. I have invested hours daily, gaining a great
             understanding of Vanilla JavaScript and CSS. More recently I have
             been Studying React JS and CSS frameworks.

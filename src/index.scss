@@ -417,8 +417,12 @@ a:visited {
     height: 650%;
   }
   .header {
-    background: url(./images/IMG-7251.jpg) no-repeat center;
-    background-attachment: none;
+    background: url(./images/IMG-7251.jpg) no-repeat center center/fixed;
+    clip-path: circle(180vh at 50% -105vh);
+  }
+  body {
+    background: url('https://images.unsplash.com/photo-1515902542059-54a400cc66fe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNsZWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60')
+      no-repeat center center/fixed;
   }
 }
 

@@ -527,7 +527,7 @@ a {
 }
 @media (max-width: 420px) {
   body::after {
-    height: 735%;
+    height: 733%;
     background: rgba(0, 0, 0, 0.65);
   }
   .header {
@@ -540,7 +540,7 @@ a {
     border-bottom: #fff 2px solid;
   }
   body {
-    background-image: linear-gradient(rgb(35, 117, 232), rgb(94, 186, 225));
+    background-image: linear-gradient(rgb(78, 191, 232), rgb(12, 37, 58));
 
     .ss-links {
       flex-direction: column;

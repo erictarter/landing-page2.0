@@ -5,7 +5,10 @@ export const Top = () => {
   return (
     <div>
       <div className='header'>
+        <div className='mobile-overlay'></div>
+        <div className='avatar-2'></div>
         <div className='ss-links'>
+          {/* <div className='welcome-msg'>Welcome To My Page</div> */}
           {/* SMOOTH SCROLL LINKS */}
           <Link
             className='ss-link'

@@ -44,9 +44,6 @@ body::after {
   background: url(./images/IMG-7251.jpg) no-repeat center center/cover;
   background-attachment: fixed;
   clip-path: circle(180vh at 50% -85vh);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .header::after {
@@ -417,6 +414,9 @@ a:visited {
 @media (max-width: 380px) {
   body::after {
     height: 650%;
+  }
+  .header {
+    background: url(./images/IMG-7251.jpg) no-repeat center;
   }
 }
 

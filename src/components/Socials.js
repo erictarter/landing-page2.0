@@ -4,7 +4,9 @@ export const Socials = () => {
   return (
     <div>
       <div className='socials center-maxw'>
-        <h1 className='social-header'>Find Me On...</h1>
+        <h1 className='social-header' id='link-4'>
+          Find Me On...
+        </h1>
         <div className='social-grid'>
           <div className='github'>
             <a href='https://github.com/erictarter' target='_blank'>

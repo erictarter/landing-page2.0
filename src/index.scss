@@ -401,7 +401,7 @@ a {
   margin-top: 6rem;
   padding: 2rem;
   font-size: 1.4rem;
-  border-top: 1px solid #fff;
+  border-top: 2px solid #fff;
   background: rgba(0, 0, 0, 0.8);
   z-index: 12;
 }
@@ -510,7 +510,7 @@ a {
 }
 @media (max-width: 420px) {
   body::after {
-    height: 710%;
+    height: 0%;
   }
   .header {
     background: rgb(19, 19, 19);
@@ -519,9 +519,10 @@ a {
     height: 100vh;
     background-attachment: fixed;
     clip-path: none;
+    border-bottom: #fff 2px solid;
   }
   body {
-    background: #333;
+    background-image: linear-gradient(rgb(9, 32, 67), rgb(42, 132, 171));
   }
 
   .ss-links {
@@ -549,6 +550,17 @@ a {
   .message {
     margin-top: 12rem;
     z-index: 10;
+  }
+
+  .blog-link:hover {
+    box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
+  }
+  .project-link:hover {
+    box-shadow: 0px 10px 30px -5px rgb(255, 255, 255);
+  }
+
+  .about-para {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 

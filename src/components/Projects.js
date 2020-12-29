@@ -183,7 +183,10 @@ export const Projects = () => {
           </div>{' '}
           <div className='project'>
             <div className='project-name'>Covid Data</div>
-            <a target='_blank' href='https://sharp-pasteur-e0280d.netlify.app/'>
+            <a
+              target='_blank'
+              href='https://tender-feynman-0a5def.netlify.app/'
+            >
               <animated.div
                 className='project-link project-link-9'
                 onMouseOver={({ clientX: x, clientY: y }) =>

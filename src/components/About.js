@@ -10,12 +10,9 @@ export const About = () => {
         <div className='about-para'>
           <div className='words'>
             My Name is Eric Tarter. I am a Front End Developer Living in the
-            Pacific Northwest. Two years ago I began to learn the basics of
-            HTML. After that began learning my first programming Language,
-            Python. About one year ago I started to learn front end
-            developement. I have invested hours daily, gaining a great
-            understanding of Vanilla JavaScript and CSS. More recently I have
-            been Studying React JS and CSS frameworks.
+            Pacific Northwest. I have been programming for over two years. Every
+            day I have invested hours into learning with my free time. Most of
+            my projects are built using React.
           </div>
         </div>
         <div className='avatar'></div>
@@ -27,8 +24,8 @@ export const About = () => {
               <span> JavaScript</span>
             </div>
             <div className='pl'>
-              <i className='fab fa-python python-icon'></i>
-              <span> Python</span>
+              <i className='fab fa-sass sass-icon'></i>
+              <span> Sass</span>
             </div>
             <div className='pl'>
               <i className='fab fa-css3 css-icon'></i>

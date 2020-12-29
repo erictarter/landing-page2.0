@@ -21,7 +21,7 @@ body::after {
   left: 0;
   top: 0;
   width: 100%;
-  height: 510%;
+  height: 495%;
   background: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
@@ -292,8 +292,8 @@ body::after {
 .js-icon {
   color: rgb(214, 214, 74);
 }
-.python-icon {
-  color: rgb(74, 103, 233);
+.sass-icon {
+  color: rgb(158, 27, 27);
 }
 .css-icon {
   background: rgb(41, 41, 231);
@@ -428,7 +428,7 @@ a {
     margin-right: 1rem;
   }
   body::after {
-    height: 515%;
+    height: 500%;
   }
 }
 
@@ -461,13 +461,13 @@ a {
   }
 
   body::after {
-    height: 610%;
+    height: 588%;
   }
 }
 
 @media (max-width: 675px) {
   body::after {
-    height: 630%;
+    height: 595%;
   }
 }
 
@@ -516,13 +516,13 @@ a {
     opacity: 1;
   }
   body::after {
-    height: 755%;
+    height: 725%;
   }
 }
 
 @media (max-width: 520px) {
   body::after {
-    height: 765%;
+    height: 740%;
   }
 }
 @media (max-width: 420px) {

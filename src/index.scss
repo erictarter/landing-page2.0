@@ -249,7 +249,7 @@ body::after {
 .words {
   line-height: 2;
   font-size: 1.3rem;
-  padding: 2rem 2rem 10rem 2rem;
+  padding: 2rem 2rem 8rem 2rem;
 }
 
 .avatar {
@@ -440,7 +440,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .words {
-    padding: 2rem 2rem 14rem 2rem;
+    padding: 2rem 2rem 8rem 2rem;
   }
 
   .avatar {
@@ -540,7 +540,8 @@ a {
     border-bottom: #fff 2px solid;
   }
   body {
-    background-image: linear-gradient(rgb(27, 64, 133), rgb(5, 27, 60));
+    // background-image: linear-gradient(rgb(27, 64, 133), rgb(5, 27, 60));
+    background: rgb(5, 27, 60);
 
     .ss-links {
       flex-direction: column;

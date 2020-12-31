@@ -598,4 +598,9 @@ a {
     }
   }
 }
-// ADD WELCOME ANIMATION MESSAGE
+// ADD MEDIA FOR REALLY WIDE SCREEN
+@media (min-width: 1280px) {
+  body::after {
+    height: 450%;
+  }
+}

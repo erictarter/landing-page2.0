@@ -60,19 +60,6 @@ export const Projects = () => {
         </h1>
         <div className='project-grid'>
           <div className='project'>
-            <div className='project-name'>Online Store</div>
-            <a target='_blank' href='https://sad-galileo-e2e41e.netlify.app'>
-              <animated.div
-                className='project-link project-link-1'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set1({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set1({ xys: [0, 0, 1] })}
-                style={{ transform: props1.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
-          <div className='project'>
             <div className='project-name'>Sports Betting</div>
             <a target='_blank' href='https://goofy-ritchie-d401d6.netlify.app/'>
               <animated.div
@@ -82,54 +69,6 @@ export const Projects = () => {
                 }
                 onMouseLeave={() => set2({ xys: [0, 0, 1] })}
                 style={{ transform: props2.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
-          <div className='project'>
-            <div className='project-name'>Lyric Finder</div>
-            <a
-              target='_blank'
-              href='https://friendly-williams-19b648.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-3'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set3({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set3({ xys: [0, 0, 1] })}
-                style={{ transform: props3.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
-          <div className='project'>
-            <div className='project-name'>Tic Tac</div>
-            <a
-              target='_blank'
-              href='https://hopeful-hopper-6ea178.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-4'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set4({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set4({ xys: [0, 0, 1] })}
-                style={{ transform: props4.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
-          <div className='project'>
-            <div className='project-name'>Trivia</div>
-            <a
-              target='_blank'
-              href='https://heuristic-newton-d525bc.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-5'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set5({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set5({ xys: [0, 0, 1] })}
-                style={{ transform: props5.xys.interpolate(trans) }}
               ></animated.div>
             </a>
           </div>
@@ -150,6 +89,19 @@ export const Projects = () => {
             </a>
           </div>
           <div className='project'>
+            <div className='project-name'>Online Store</div>
+            <a target='_blank' href='https://sad-galileo-e2e41e.netlify.app'>
+              <animated.div
+                className='project-link project-link-1'
+                onMouseOver={({ clientX: x, clientY: y }) =>
+                  set1({ xys: calc(x, y) })
+                }
+                onMouseLeave={() => set1({ xys: [0, 0, 1] })}
+                style={{ transform: props1.xys.interpolate(trans) }}
+              ></animated.div>
+            </a>
+          </div>
+          <div className='project'>
             <div className='project-name'>NBA Predictions</div>
             <a
               target='_blank'
@@ -165,6 +117,38 @@ export const Projects = () => {
               ></animated.div>
             </a>
           </div>{' '}
+          <div className='project'>
+            <div className='project-name'>Lyric Finder</div>
+            <a
+              target='_blank'
+              href='https://friendly-williams-19b648.netlify.app/'
+            >
+              <animated.div
+                className='project-link project-link-3'
+                onMouseOver={({ clientX: x, clientY: y }) =>
+                  set3({ xys: calc(x, y) })
+                }
+                onMouseLeave={() => set3({ xys: [0, 0, 1] })}
+                style={{ transform: props3.xys.interpolate(trans) }}
+              ></animated.div>
+            </a>
+          </div>
+          <div className='project'>
+            <div className='project-name'>Trivia</div>
+            <a
+              target='_blank'
+              href='https://heuristic-newton-d525bc.netlify.app/'
+            >
+              <animated.div
+                className='project-link project-link-5'
+                onMouseOver={({ clientX: x, clientY: y }) =>
+                  set5({ xys: calc(x, y) })
+                }
+                onMouseLeave={() => set5({ xys: [0, 0, 1] })}
+                style={{ transform: props5.xys.interpolate(trans) }}
+              ></animated.div>
+            </a>
+          </div>
           <div className='project'>
             <div className='project-name'>Simple Calculator</div>
             <a
@@ -194,6 +178,22 @@ export const Projects = () => {
                 }
                 onMouseLeave={() => set9({ xys: [0, 0, 1] })}
                 style={{ transform: props9.xys.interpolate(trans) }}
+              ></animated.div>
+            </a>
+          </div>
+          <div className='project'>
+            <div className='project-name'>Tic Tac</div>
+            <a
+              target='_blank'
+              href='https://hopeful-hopper-6ea178.netlify.app/'
+            >
+              <animated.div
+                className='project-link project-link-4'
+                onMouseOver={({ clientX: x, clientY: y }) =>
+                  set4({ xys: calc(x, y) })
+                }
+                onMouseLeave={() => set4({ xys: [0, 0, 1] })}
+                style={{ transform: props4.xys.interpolate(trans) }}
               ></animated.div>
             </a>
           </div>

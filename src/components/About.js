@@ -9,10 +9,10 @@ export const About = () => {
         </h1>
         <div className='about-para'>
           <div className='words'>
-            My Name is Eric Tarter. I am a Front End Developer Living in the
+            My Name is Eric Tarter. I am a Front End Developer living in the
             Pacific Northwest. I have been programming for over two years. Every
-            day I have invested hours into learning with my free time. Most of
-            my projects are built using React.
+            day I have invested hours of learning with my free time. Most of my
+            projects are built using React.
           </div>
         </div>
         <div className='avatar'></div>

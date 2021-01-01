@@ -56,7 +56,7 @@ export const Projects = () => {
     <div>
       <div className='projects-container center-maxw'>
         <h1 className='projects-header' id='link-1'>
-          Projects
+          View Projects
         </h1>
         <div className='project-grid'>
           <div className='project'>
@@ -199,7 +199,7 @@ export const Projects = () => {
           </div>
         </div>
         <h1 className='projects-header' id='link-2'>
-          My Blog
+          Blog Post
         </h1>
         <a target='_blank' href='https://musing-gates-809017.netlify.app/'>
           <animated.div

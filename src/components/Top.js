@@ -12,12 +12,23 @@ export const Top = () => {
     document.querySelector('.ss-links').classList.add('show');
   }, 2700);
   setTimeout(() => {
+    document.querySelector('.logo').classList.add('show');
+  }, 3200);
+  setTimeout(() => {
+    document.querySelector('.name').classList.add('show');
+  }, 3750);
+  setTimeout(() => {
     document.querySelector('.message').style.display = 'none';
   }, 2750);
 
   return (
     <div>
       <div className='header' id='header'>
+        <div className='logo'>
+          <div className='design'></div>
+          <div className='name'>Eric Tarter</div>
+          <div className='slogan'>Front End Developer</div>
+        </div>
         <div className='message'>
           <span className='message1'>Welcome</span>
           <br />
@@ -47,7 +58,7 @@ export const Top = () => {
             offset={-70}
             duration={700}
           >
-            My Blog
+            Blog Post
           </Link>
           <Link
             className='ss-link'

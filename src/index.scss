@@ -320,7 +320,7 @@ body::after {
 
 .social-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 a:visited {
@@ -347,7 +347,6 @@ a {
   opacity: 0.7;
   transition: 0.3s ease all;
   color: #fff;
-  margin: 0 2rem;
 }
 .insta {
   font-size: 4rem;
@@ -359,9 +358,27 @@ a {
   color: #fff;
 }
 
+.twitter {
+  font-size: 4rem;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease all;
+  color: #fff;
+}
+.fa-twitter {
+  transition: 0.4s ease all;
+}
+
+.fa-twitter:hover {
+  transition: 0.4s ease all;
+  color: rgb(17, 212, 233);
+}
+
 .fa-facebook-square:hover {
   transition: 0.4s ease all;
-  color: rgb(52, 121, 105);
+  color: rgb(15, 62, 164);
 }
 
 .fa-facebook-square {
@@ -370,7 +387,7 @@ a {
 
 .fa-instagram:hover {
   transition: 0.4s ease all;
-  color: rgb(52, 121, 105);
+  color: rgb(78, 48, 112);
 }
 
 .fa-instagram-square {
@@ -378,7 +395,7 @@ a {
 }
 .fa-github-square:hover {
   transition: 0.4s ease all;
-  color: rgb(52, 121, 105);
+  color: rgb(134, 35, 35);
 }
 
 .fa-github-square {
@@ -387,11 +404,11 @@ a {
 
 .github:hover {
   transition: 0.3s ease all;
-  color: rgb(52, 121, 105);
+  color: rgb(126, 31, 31);
   opacity: 1;
 }
 .face:hover {
-  color: rgb(52, 121, 105);
+  color: rgb(7, 67, 179);
   transition: 0.3s ease all;
   opacity: 1;
 }
@@ -515,6 +532,11 @@ a {
     font-size: 3.5rem;
     opacity: 1;
   }
+
+  .twitter {
+    font-size: 3.5rem;
+    opacity: 1;
+  }
   body::after {
     height: 725%;
   }
@@ -588,11 +610,15 @@ a {
       transition: 0.4s ease all;
       color: rgba(0, 0, 0, 0.6);
     }
-    .fa-github-square:hover {
+    .github:hover {
       transition: 0.4s ease all;
       color: rgba(0, 0, 0, 0.6);
     }
     .fa-facebook-square:hover {
+      transition: 0.4s ease all;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .fa-twitter:hover {
       transition: 0.4s ease all;
       color: rgba(0, 0, 0, 0.6);
     }

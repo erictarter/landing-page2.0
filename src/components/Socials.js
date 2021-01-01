@@ -18,6 +18,11 @@ export const Socials = () => {
               <i className='fab fa-facebook-square'></i>
             </a>
           </div>
+          <div className='twitter'>
+            <a href='https://twitter.com/eric39804248' target='_blank'>
+              <i className='fab fa-twitter'></i>
+            </a>
+          </div>
           <div className='insta'>
             <a href='https://www.instagram.com/erictarter/' target='_blank'>
               <i className='fab fa-instagram insta'></i>

@@ -74,7 +74,6 @@ export const Projects = () => {
       e.target.previousSibling.classList.add('show');
       e.target.innerText = 'Hide';
       scrollState.push(window.scrollY);
-      console.log(scrollState[scrollState.length - 1]);
     } else {
       e.target.previousSibling.classList.remove('show');
       e.target.innerText = 'Description';

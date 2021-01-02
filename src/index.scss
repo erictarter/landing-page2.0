@@ -216,7 +216,7 @@ body::after {
 }
 
 .description-text-chairs {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -225,14 +225,14 @@ body::after {
 
 .description-text-chairs.show {
   color: #fff;
-  height: 100%;
+  max-height: 30rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-sb {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -241,14 +241,14 @@ body::after {
 
 .description-text-sb.show {
   color: #fff;
-  height: 100%;
+  max-height: 30rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-piano {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -257,14 +257,14 @@ body::after {
 
 .description-text-piano.show {
   color: #fff;
-  height: 100%;
+  max-height: 30rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-nba {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -273,14 +273,14 @@ body::after {
 
 .description-text-nba.show {
   color: #fff;
-  height: 100%;
+  max-height: 32rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-trivia {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -289,14 +289,14 @@ body::after {
 
 .description-text-trivia.show {
   color: #fff;
-  height: 100%;
+  max-height: 30rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-covid {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -305,14 +305,14 @@ body::after {
 
 .description-text-covid.show {
   color: #fff;
-  height: 100%;
+  max-height: 30rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
 }
 
 .description-text-blog {
-  height: 0rem;
+  max-height: 0;
   color: transparent;
   transition: all 0.2s ease;
   z-index: -1;
@@ -321,10 +321,11 @@ body::after {
 
 .description-text-blog.show {
   color: #fff;
-  height: 100%;
+  max-height: 20rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   font-size: 1.4rem;
+  padding: 2rem;
 }
 
 .dbtn {
@@ -767,7 +768,7 @@ a {
   }
   body {
     // background-image: linear-gradient(rgb(27, 64, 133), rgb(5, 27, 60));
-    background: rgb(5, 27, 60);
+    background: rgb(5, 13, 26);
 
     .ss-links {
       flex-direction: column;
@@ -804,7 +805,7 @@ a {
     }
 
     .about-para {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     .line {
@@ -847,6 +848,38 @@ a {
   .slogan {
     font-size: 2rem;
   }
+
+  .description-text-chairs.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-sb.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-piano.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-nba.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-trivia.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-covid.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-blog.show {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-blog.show {
+    // padding: 0.8rem;
+  }
 }
 // ADD MEDIA FOR REALLY WIDE SCREEN
 @media (min-width: 1280px) {
@@ -854,11 +887,6 @@ a {
     height: 445%;
   }
 }
-
-// FIX DESCRIPTION TEXT HEIGHT PER WIDTH
-// TRY SLIGHTLY SLOWER ANIMATION FOR SHOW
-
-// CHANGE HIEGHT TO 100%
 
 // MAKE LINKD IN ACCOUNT
 // ADD LINKD IN AND REMOVE FACEBOOK AND INSTA

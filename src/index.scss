@@ -225,7 +225,7 @@ body::after {
 
 .description-text-chairs.show {
   color: #fff;
-  height: 15rem;
+  height: 13.3rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
@@ -257,7 +257,7 @@ body::after {
 
 .description-text-piano.show {
   color: #fff;
-  height: 22rem;
+  height: 20.5rem;
   transition: all 0.2s ease;
   background-color: rgba(46, 74, 64, 0.8);
   margin-top: 0.6rem;
@@ -831,6 +831,47 @@ a {
     top: 6rem;
     left: 0;
     margin-left: 50%;
+  }
+
+  .dbtn {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .description-text-chairs.show {
+    color: #fff;
+    height: 12rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-sb.show {
+    height: 14.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-piano.show {
+    height: 16rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-nba.show {
+    height: 19rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-trivia.show {
+    height: 12rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-covid.show {
+    height: 17.8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description-text-blog.show {
+    height: 9rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
   }
 }
 // ADD MEDIA FOR REALLY WIDE SCREEN

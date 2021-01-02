@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 // PROJECT ANIMATION
@@ -52,6 +52,35 @@ export const Projects = () => {
     config: { duration: 50, mass: 5, tension: 350, friction: 40 }
   }));
 
+  // const [scrollStart, setScrollStart] = useState(0);
+  let scrollState = [];
+
+  window.addEventListener('scroll', () => {
+    if (
+      window.scrollY > scrollState[scrollState.length - 1] + 250 ||
+      window.scrollY < scrollState[scrollState.length - 1] - 250
+    ) {
+      document.querySelectorAll('.description-text').forEach(i => {
+        i.classList.remove('show');
+      });
+      document
+        .querySelectorAll('.dbtn')
+        .forEach(i => (i.innerText = 'Description'));
+    }
+  });
+
+  const showDescription = e => {
+    if (e.target.innerText === 'Description') {
+      e.target.previousSibling.classList.add('show');
+      e.target.innerText = 'Hide';
+      scrollState.push(window.scrollY);
+      console.log(scrollState[scrollState.length - 1]);
+    } else {
+      e.target.previousSibling.classList.remove('show');
+      e.target.innerText = 'Description';
+    }
+  };
+
   return (
     <div>
       <div className='projects-container center-maxw'>
@@ -61,6 +90,22 @@ export const Projects = () => {
         <div className='project-grid'>
           <div className='project'>
             <div className='project-name'>Sports Betting</div>
+            <div className='description-text-sb description-text'>
+              This project is designed to be a real sports betting experience.
+              <br />
+              <br />
+              Features:
+              <br />
+              <li>Betslip</li>
+              <li>Realistic betting capability</li>
+              <li>Sign up / Login form</li>
+              <li>Sort different sports</li>
+              <li>Keyframe animations</li>
+              <li>Smooth UI</li>
+            </div>
+            <div onClick={showDescription} className='discription-sb dbtn'>
+              Description
+            </div>
             <a target='_blank' href='https://goofy-ritchie-d401d6.netlify.app/'>
               <animated.div
                 className='project-link project-link-2'
@@ -74,6 +119,27 @@ export const Projects = () => {
           </div>
           <div className='project'>
             <div className='project-name'>Keyboard Tone JS</div>
+            <div className='description-text-piano description-text'>
+              This app can teach beginner piano skills. Looks and plays like a
+              real keyboard.
+              <br />
+              <br />
+              Features:
+              <br />
+              <li>Learn major scales and chords</li>
+              <li>Learn notes by clicking</li>
+              <li>Learn notes by Keydown</li>
+              <br />
+              Libraries:
+              <br />
+              <li>Tone JS</li>
+            </div>
+            <div
+              onClick={showDescription}
+              className='discription-keyboard dbtn'
+            >
+              Description
+            </div>
             <a
               target='_blank'
               href='https://affectionate-booth-7c6f42.netlify.app/'
@@ -90,6 +156,20 @@ export const Projects = () => {
           </div>
           <div className='project'>
             <div className='project-name'>Online Store</div>
+            <div className='description-text-chairs description-text'>
+              This project is an Ecommerce site with "add to cart"
+              functionailty.
+              <br />
+              <br />
+              Features:
+              <br />
+              <li>Online shopping cart</li>
+              <li>Confirm check out</li>
+              <li>Local Storage use to save cart items</li>
+            </div>
+            <div onClick={showDescription} className='discription-chairs dbtn'>
+              Description
+            </div>
             <a target='_blank' href='https://sad-galileo-e2e41e.netlify.app'>
               <animated.div
                 className='project-link project-link-1'
@@ -103,6 +183,25 @@ export const Projects = () => {
           </div>
           <div className='project'>
             <div className='project-name'>NBA Predictions</div>
+            <div className='description-text-nba description-text'>
+              I built this project for my friends to predict the upcoming NBA
+              season. Click on team logos to choose playoff seeding.
+              <br />
+              <br />
+              Features:
+              <br />
+              <li>Built with React</li>
+              <li>
+                Selected data stored in global state w/ React context hooks
+              </li>
+              <li>Form submission includes data</li>
+              <br />
+              Libraries:
+              <li>React spring animations</li>
+            </div>
+            <div onClick={showDescription} className='discription-chairs dbtn'>
+              Description
+            </div>
             <a
               target='_blank'
               href='https://inspiring-kilby-dfe78c.netlify.app'
@@ -118,23 +217,19 @@ export const Projects = () => {
             </a>
           </div>{' '}
           <div className='project'>
-            <div className='project-name'>Lyric Finder</div>
-            <a
-              target='_blank'
-              href='https://friendly-williams-19b648.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-3'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set3({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set3({ xys: [0, 0, 1] })}
-                style={{ transform: props3.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
-          <div className='project'>
             <div className='project-name'>Trivia</div>
+            <div className='description-text-trivia description-text'>
+              A fun quizz I made for my friends to test basketball knowledge.
+              One of my earliest completed projects.
+              <br />
+              <br />
+              Features:
+              <li>Good looking selction and animation</li>
+              <li>Form submission with results</li>
+            </div>
+            <div onClick={showDescription} className='discription-chairs dbtn'>
+              Description
+            </div>
             <a
               target='_blank'
               href='https://heuristic-newton-d525bc.netlify.app/'
@@ -150,23 +245,22 @@ export const Projects = () => {
             </a>
           </div>
           <div className='project'>
-            <div className='project-name'>Simple Calculator</div>
-            <a
-              target='_blank'
-              href='https://compassionate-jepsen-1d5b9f.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-8'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set8({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set8({ xys: [0, 0, 1] })}
-                style={{ transform: props8.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>{' '}
-          <div className='project'>
             <div className='project-name'>Covid Data</div>
+            <div className='description-text-covid description-text'>
+              Get up to date Covid-19 data for all US States.
+              <br />
+              <br />
+              Features:
+              <li>HTTP request to Covid Data API</li>
+              <li>Gets case increase and total cases data</li>
+              <li>Gets death increase and total deaths data</li>
+              <br />
+              API:
+              <li>Fetch API</li>
+            </div>
+            <div onClick={showDescription} className='discription-chairs dbtn'>
+              Description
+            </div>
             <a
               target='_blank'
               href='https://tender-feynman-0a5def.netlify.app/'
@@ -181,26 +275,18 @@ export const Projects = () => {
               ></animated.div>
             </a>
           </div>
-          <div className='project'>
-            <div className='project-name'>Tic Tac</div>
-            <a
-              target='_blank'
-              href='https://hopeful-hopper-6ea178.netlify.app/'
-            >
-              <animated.div
-                className='project-link project-link-4'
-                onMouseOver={({ clientX: x, clientY: y }) =>
-                  set4({ xys: calc(x, y) })
-                }
-                onMouseLeave={() => set4({ xys: [0, 0, 1] })}
-                style={{ transform: props4.xys.interpolate(trans) }}
-              ></animated.div>
-            </a>
-          </div>
         </div>
         <h1 className='projects-header' id='link-2'>
           Blog Post
         </h1>
+        <div className='description-text-blog description-text'>
+          My blog post goes into depth on how I created a few of my projects. It
+          also includes some helpful front end tips. That includes CSS tips and
+          how to use the react smooth scrolling libray.
+        </div>
+        <div onClick={showDescription} className='discription-chairs dbtn'>
+          Description
+        </div>
         <a target='_blank' href='https://musing-gates-809017.netlify.app/'>
           <animated.div
             className='blog-link'

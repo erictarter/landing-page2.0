@@ -25,9 +25,10 @@ export const Top = () => {
     <div>
       <div className='header' id='header'>
         <div className='logo'>
-          <div className='design'></div>
-          <div className='name'>Eric Tarter</div>
-          <div className='slogan'>Front End Developer</div>
+          <div className='logo-container'>
+            <div className='name'>Eric Tarter</div>
+            <div className='slogan'>Front End Developer</div>
+          </div>
         </div>
         <div className='message'>
           <span className='message1'>Welcome</span>

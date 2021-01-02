@@ -21,7 +21,7 @@ body::after {
   left: 0;
   top: 0;
   width: 100%;
-  height: 490%;
+  height: 505%;
   background: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
@@ -118,8 +118,14 @@ body::after {
   display: none;
 }
 
+.logo-container {
+  border-right: 1px solid rgba(57, 77, 70, 0.8);
+  border-left: 1px solid rgba(57, 77, 70, 0.8);
+}
+
 .logo {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
   width: 14rem;
   border-radius: 10px;
   padding: 1rem;
@@ -132,6 +138,7 @@ body::after {
   font-size: 1.4rem;
   opacity: 0;
   z-index: 11;
+  // color: #333;
 }
 
 .logo.show {
@@ -140,9 +147,11 @@ body::after {
 }
 
 .name {
-  border-bottom: 1px solid rgba(46, 74, 64, 0.8);
+  border-bottom: 1px solid rgba(57, 77, 70, 0.8);
   padding-bottom: 0.6rem;
   margin-bottom: 0.6rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 .ss-links {
@@ -186,8 +195,8 @@ body::after {
   text-align: center;
 }
 .project-name {
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .project-link {
   width: 100%;
@@ -204,6 +213,149 @@ body::after {
   transition: all 0.3s ease;
   box-shadow: 0px 10px 30px -5px rgb(81, 152, 127);
   opacity: 1;
+}
+
+.description-text-chairs {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-chairs.show {
+  color: #fff;
+  height: 15rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-sb {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-sb.show {
+  color: #fff;
+  height: 18rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-piano {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-piano.show {
+  color: #fff;
+  height: 22rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-nba {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-nba.show {
+  color: #fff;
+  height: 24.5rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-trivia {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-trivia.show {
+  color: #fff;
+  height: 16rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-covid {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-covid.show {
+  color: #fff;
+  height: 19rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  margin-top: 0.6rem;
+}
+
+.description-text-blog {
+  height: 0rem;
+  color: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.description-text-blog.show {
+  color: #fff;
+  height: 6rem;
+  transition: all 0.2s ease;
+  background-color: rgba(46, 74, 64, 0.8);
+  font-size: 1.4rem;
+}
+
+.dbtn {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+  width: 6rem;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid rgba(78, 97, 88, 0.7);
+  transition: 0.2s ease all;
+}
+
+.description-text {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0.8rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+}
+
+.dbtn:hover {
+  transition: 0.2s ease all;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .blog-link {
@@ -467,12 +619,23 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1115px) {
+  body::after {
+    height: 510%;
+  }
+}
+@media (max-width: 1113px) {
+  body::after {
+    height: 510%;
+  }
+}
+
 @media (max-width: 950px) {
   .avatar {
     margin-right: 1rem;
   }
   body::after {
-    height: 495%;
+    height: 510%;
   }
 }
 
@@ -505,7 +668,7 @@ a {
   }
 
   body::after {
-    height: 570%;
+    height: 560%;
   }
 
   .logo {
@@ -525,7 +688,7 @@ a {
 
 @media (max-width: 675px) {
   body::after {
-    height: 595%;
+    height: 565%;
   }
 }
 
@@ -579,13 +742,13 @@ a {
     opacity: 1;
   }
   body::after {
-    height: 725%;
+    height: 715%;
   }
 }
 
 @media (max-width: 520px) {
   body::after {
-    height: 740%;
+    height: 710%;
   }
 }
 @media (max-width: 420px) {
@@ -673,11 +836,10 @@ a {
 // ADD MEDIA FOR REALLY WIDE SCREEN
 @media (min-width: 1280px) {
   body::after {
-    height: 450%;
+    height: 445%;
   }
 }
 
-// DESCRIBE PROJECTS BRIEFLY - descripition button pushes link image/images down and text description appears
 // MAKE LINKD IN ACCOUNT
 // ADD LINKD IN AND REMOVE FACEBOOK AND INSTA
 // WORK ON RES

@@ -9,13 +9,12 @@ export const Socials = () => {
         </h1>
         <div className='social-grid'>
           <div className='github'>
-            <a href='https://github.com/erictarter' target='_blank'>
+            <a
+              className='social'
+              href='https://github.com/erictarter'
+              target='_blank'
+            >
               <i className='fab fa-github instagram-icon github'></i>
-            </a>
-          </div>
-          <div className='face'>
-            <a href='https://facebook.com' target='_blank'>
-              <i className='fab fa-facebook-square'></i>
             </a>
           </div>
           <div className='twitter'>
@@ -23,9 +22,12 @@ export const Socials = () => {
               <i className='fab fa-twitter'></i>
             </a>
           </div>
-          <div className='insta'>
-            <a href='https://www.instagram.com/erictarter/' target='_blank'>
-              <i className='fab fa-instagram insta'></i>
+          <div className='linkedin'>
+            <a
+              href='https://www.linkedin.com/in/eric-tarter-b2549a203/'
+              target='_blank'
+            >
+              <i class='fab <i class="fab fa-linkedin linkedin"></i>'></i>
             </a>
           </div>
         </div>

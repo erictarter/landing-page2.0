@@ -99,7 +99,7 @@ export const Projects = () => {
               <li>Betslip</li>
               <li>Realistic betting capability</li>
               <li>Sign up / Login form</li>
-              <li>Sort different sports</li>
+              <li>Filter through sports</li>
               <li>Keyframe animations</li>
               <li>Smooth UI</li>
             </div>
@@ -252,8 +252,8 @@ export const Projects = () => {
               <br />
               Features:
               <li>HTTP request to Covid Data API</li>
-              <li>Gets case increase and total cases data</li>
-              <li>Gets death increase and total deaths data</li>
+              <li>Get case increase and total cases data</li>
+              <li>Get death increase and total deaths data</li>
               <br />
               API:
               <li>Fetch API</li>

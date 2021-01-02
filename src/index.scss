@@ -873,6 +873,17 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 1.2rem;
   }
+
+  .logo {
+    width: 85%;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+  .slogan {
+    font-size: 2rem;
+  }
 }
 // ADD MEDIA FOR REALLY WIDE SCREEN
 @media (min-width: 1280px) {

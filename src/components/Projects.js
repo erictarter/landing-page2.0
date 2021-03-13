@@ -96,11 +96,9 @@ export const Projects = () => {
               Features:
               <br />
               <li>Betslip</li>
-              <li>Realistic betting capability</li>
               <li>Sign up / Login form</li>
               <li>Filter through sports</li>
               <li>Keyframe animations</li>
-              <li>Smooth UI</li>
             </div>
             <div onClick={showDescription} className='discription-sb dbtn'>
               Description
@@ -156,20 +154,23 @@ export const Projects = () => {
           <div className='project'>
             <div className='project-name'>Online Store</div>
             <div className='description-text-chairs description-text'>
-              This project is an Ecommerce site with "add to cart"
-              functionailty.
+              Online Sunglasses Store built with React.
               <br />
               <br />
               Features:
               <br />
-              <li>Online shopping cart</li>
-              <li>Confirm check out</li>
-              <li>Local Storage use to save cart items</li>
+              <li>Responsive design</li>
+              <li>UseSpring react animations</li>
+              <li>Component &amp; App level state use</li>
+              <li>Shopping Cart</li>
             </div>
             <div onClick={showDescription} className='discription-chairs dbtn'>
               Description
             </div>
-            <a target='_blank' href='https://sad-galileo-e2e41e.netlify.app'>
+            <a
+              target='_blank'
+              href='https://mystifying-mahavira-4e8faa.netlify.app/'
+            >
               <animated.div
                 className='project-link project-link-1'
                 onMouseOver={({ clientX: x, clientY: y }) =>
@@ -223,7 +224,7 @@ export const Projects = () => {
               <br />
               <br />
               Features:
-              <li>Good looking selction and animation</li>
+              <li>Nice looking selection and animation</li>
               <li>Form submission with results</li>
             </div>
             <div onClick={showDescription} className='discription-chairs dbtn'>

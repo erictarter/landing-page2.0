@@ -182,30 +182,23 @@ export const Projects = () => {
             </a>
           </div>
           <div className='project'>
-            <div className='project-name'>NBA Predictions</div>
+            <div className='project-name'>Home Budget</div>
             <div className='description-text-nba description-text'>
-              I built this project for my friends to predict the upcoming NBA
-              season. Click on team logos to choose playoff seeding.
+              A series of questions to determine how much "house" you can
+              afford. This tool will ask the user questions about income,
+              credit, ect.
               <br />
               <br />
               Features:
               <br />
               <li>Built with React</li>
-              <li>
-                Selected data stored in global state w/ React context hooks
-              </li>
-              <li>Form submission includes data</li>
-              <br />
-              Libraries:
-              <li>React spring animations</li>
+              <li>UseSpring animations triggard by state change</li>
+              <li>Progress step design</li>
             </div>
             <div onClick={showDescription} className='discription-chairs dbtn'>
               Description
             </div>
-            <a
-              target='_blank'
-              href='https://inspiring-kilby-dfe78c.netlify.app'
-            >
+            <a target='_blank' href='https://gifted-kepler-32c70b.netlify.app/'>
               <animated.div
                 className='project-link project-link-7'
                 onMouseOver={({ clientX: x, clientY: y }) =>
